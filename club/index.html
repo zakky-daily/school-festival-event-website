@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+	<!-- scp -r ScF_20240710 k2411572@sol.cc.uec.ac.jp:/home0/y2024/k2411572/public_html/14th -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=0.8">
+
+    <title>増穂祭 2024</title>
+    <link rel="icon" href="../logo.png">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	<header>
+		<div class="environment pc">
+			<a href="../">トップ</a>
+			<a href="../map/">学内マップ</a>
+			<a href="../class/?sort=group-up&filter=all">クラス企画</a>
+			<a href="../band/?sort=group-up&filter=all">バンド</a>
+			<a href="../club/?sort=group-up&filter=all">部活</a>
+			<a href="../shop/?sort=group-up&filter=all">出店</a>
+			<a href="../timetable/">タイムテーブル</a>
+			<div class="expand other">
+				その他
+				<div class="expand-list">
+					<a href="../theme/">テーマに寄せて</a>
+					<a href="../greeting/">校長・文実委員長挨拶</a>
+					<a href="../access/">アクセス</a>
+					<a href="../donate/">寄付のお願い</a>
+				</div>
+			</div>
+		</div>
+		<div class="environment phone">
+			<a href="../">トップ</a>
+			<a href="../map/">学内マップ</a>
+			<div class="expand attraction">
+				企画
+				<div class="expand-list">
+					<a href="../class/?sort=group-up&filter=all">クラス企画</a>
+					<a href="../band/?sort=group-up&filter=all">バンド</a>
+					<a href="../club/?sort=group-up&filter=all">部活</a>
+					<a href="../shop/?sort=group-up&filter=all">出店</a>
+				</div>
+			</div>
+			<a href="../timetable/">タイムテーブル</a>
+			<div class="expand other other-right">
+				その他
+				<div class="expand-list">
+					<a href="../theme/">テーマに寄せて</a>
+					<a href="../greeting/">校長・文実委員長挨拶</a>
+					<a href="../access/">アクセス</a>
+					<a href="../donate/">寄付のお願い</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="top-image">
+		<img src="gym.jpg">
+		<div class="title">部活動企画</div>
+	</div>
+
+	<div class="width">
+
+		<div class="comment">
+			文化祭はクラス企画だけじゃない！<br>
+			今年は7つの部活団体が参加します。<br>
+			部員が一丸となって作った企画もぜひお楽しみください!!
+		</div>
+
+		<div class="page-label">企画一覧</div>
+
+		<div class="finder">
+			<div class="element sort">
+				<div class="label">並び順</div>
+				<div class="dropbox">
+					<div class="mask">
+						<div class="element show">団体名(昇順)</div>
+						<a href="./?sort=group-up" class="element candidate">団体名(昇順)</a>
+						<a href="./?sort=group-down" class="element candidate">団体名(降順)</a>
+						<a href="./?sort=name-up" class="element candidate">企画名(昇順)</a>
+						<a href="./?sort=name-down" class="element candidate">企画名(降順)</a>
+					</div>
+				</div>
+			</div>
+			<div class="element filter">
+				<div class="label">ジャンル</div>
+				<div class="dropbox">
+					<div class="mask">
+						<div class="element show">全ての企画</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="list">
+
+			<div class="content">
+				<div class="header">
+					<div class="group">チア部</div>
+					<div class="name">Cheer Dan In HSD</div>
+					<div class="category"># 公演</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="cheer.jpg"></div>
+					<div class="text">
+						今年もオープニングセレモニーやります!最初は私たちで決まり！！9:00に体育館で待っています
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">踊り部</div>
+					<div class="name">ダンシングステージ2024</div>
+					<div class="category"># 公演</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="dance.jpg"></div>
+					<div class="text">
+						35､36､37期生全員で踊る最初で最後のステージ､ぜひお楽しみください!!盛り上がろ〜!!
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">吹奏楽部</div>
+					<div class="name">Disney Song Medley</div>
+					<div class="category"># 公演</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="brass.jpg"></div>
+					<div class="text">
+						夢の世界へあなたを引き込む、そんな音楽をお届けします♫顧問、部員一同お待ちしています！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">合唱部</div>
+					<div class="name">J-POPメドレー.ver4</div>
+					<div class="category"># 公演</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="chorus.jpg"></div>
+					<div class="text">
+						音楽祭で歌った曲や人気のpopsなど色々歌います！一緒に楽しみましょう♪　
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="header">
+					<div class="group">演劇部</div>
+					<div class="name">DecadeMemory</div>
+					<div class="category"># 演劇</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="engeki.jpg"></div>
+					<div class="text">
+						今年は演劇部10周年なんです！OBとも協力して作った10年間の軌跡､どうぞご覧あれ。
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">漫画研究部</div>
+					<div class="name">イラスト展示会</div>
+					<div class="category"># 展示</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="irast.jpg"></div>
+					<div class="text">
+						イラスト配布とかお絵描きスペースもあるのでぜひ立ち寄ってください〜！
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="header">
+					<div class="group">生物部</div>
+					<div class="name">生き物万博</div>
+					<div class="category"># 展示</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="seibutu.jpg"></div>
+					<div class="text">
+						うずらの餌やり今年もやります。実は生物室は1番涼しい場所です！避暑地としてもどうぞ〜
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="times-name">第37回<span class="name">増穂祭</span></div>
+		<div class="copyright">(c) Hashida high school. All right reserved.</div>
+	</footer>
+
+	<script src="../attraction.js"></script>
+	<script src="../header.js"></script>
+</body>
+
+</html>

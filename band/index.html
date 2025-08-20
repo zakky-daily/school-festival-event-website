@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+	<!-- scp -r ScF_20240710 k2411572@sol.cc.uec.ac.jp:/home0/y2024/k2411572/public_html/14th -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=0.8">
+
+    <title>増穂祭 2024</title>
+    <link rel="icon" href="../logo.png">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="body-black">
+	<header class="header-black">
+		<div class="environment pc">
+			<a href="../">トップ</a>
+			<a href="../map/">学内マップ</a>
+			<a href="../class/?sort=group-up&filter=all">クラス企画</a>
+			<a href="../band/?sort=group-up&filter=all">バンド</a>
+			<a href="../club/?sort=group-up&filter=all">部活</a>
+			<a href="../shop/?sort=group-up&filter=all">出店</a>
+			<a href="../timetable/">タイムテーブル</a>
+			<div class="expand other">
+				その他
+				<div class="expand-list">
+					<a href="../theme/">テーマに寄せて</a>
+					<a href="../greeting/">校長・文実委員長挨拶</a>
+					<a href="../access/">アクセス</a>
+					<a href="../donate/">寄付のお願い</a>
+				</div>
+			</div>
+		</div>
+		<div class="environment phone">
+			<a href="../">トップ</a>
+			<a href="../map/">学内マップ</a>
+			<div class="expand attraction">
+				企画
+				<div class="expand-list">
+					<a href="../class/?sort=group-up&filter=all">クラス企画</a>
+					<a href="../band/?sort=group-up&filter=all">バンド</a>
+					<a href="../club/?sort=group-up&filter=all">部活</a>
+					<a href="../shop/?sort=group-up&filter=all">出店</a>
+				</div>
+			</div>
+			<a href="../timetable/">タイムテーブル</a>
+			<div class="expand other other-right">
+				その他
+				<div class="expand-list">
+					<a href="../theme/">テーマに寄せて</a>
+					<a href="../greeting/">校長・文実委員長挨拶</a>
+					<a href="../access/">アクセス</a>
+					<a href="../donate/">寄付のお願い</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="top-image">
+		<img src="band.jpg">
+		<div class="title">バンド</div>
+	</div>
+
+	<div class="width">
+
+		<div class="comment comment-black">
+			一音、一音に、<br>
+			魂を込める。<br>
+			この瞬間を最高なものにすると誓った。
+		</div>
+			
+		<div class="page-label page-label-black">企画一覧</div>
+
+		<div class="finder finder-black">
+			<div class="element sort">
+				<div class="label">並び順</div>
+				<div class="dropbox">
+					<div class="mask">
+						<div class="element show">開始時間(昇順)</div>
+						<a href="./?sort=group-up" class="element candidate">開始時間(昇順)</a>
+						<a href="./?sort=group-down" class="element candidate">開始時間(降順)</a>
+						<a href="./?sort=name-up" class="element candidate">団体名(昇順)</a>
+						<a href="./?sort=name-down" class="element candidate">団体名(降順)</a>
+					</div>
+				</div>
+			</div>
+			<div class="element filter">
+				<div class="label">ジャンル</div>
+				<div class="dropbox">
+					<div class="mask">
+						<div class="element show">全ての企画</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="list">
+			<div class="content">
+				<div class="header">
+					<div class="group">11:00~</div>
+					<div class="name">foster</div>
+					<div class="category"># J-POP</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="foster.jpg"></div>
+					<div class="text">
+						1年生の4人組ガールズバンドです！<br>
+						ヨルシカ、ずとまよなど、みんなで盛り上がれる曲を演奏します！ぜひ聴きに来てください！！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">12:00~</div>
+					<div class="name">JOKER</div>
+					<div class="category"># ロック</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="joker.avif"></div>
+					<div class="text">
+						時は来た。同志よ、会場に来い。
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">13:00~</div>
+					<div class="name">ボカロ☆スター 2.0</div>
+					<div class="category"># ボカロ・アニソン</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="vocaloid.jpg"></div>
+					<div class="text">
+						学年を超えて結集した、ボカロを愛する人々によるバンド。<br>
+						今年は2018年に発表されて瞬く間に超有名になった「あの」曲と、涼宮ハルヒの憂鬱のあの「代表」的な劇中歌を披露します！<br>
+						さあ、ペンライトを持って集合だ、そこの君！！！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">14:00~</div>
+					<div class="name">Back Number</div>
+					<div class="category"># ロック</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="back.jpg"></div>
+					<div class="text">
+						Back Numberのコピーバンドです。<br>
+						今年は「瞬き」・「ハッピーエンド」・「幸せ」を演奏します。<br>
+						是非ききに来てください。
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">15:00~</div>
+					<div class="name">生命線</div>
+					<div class="category"># J-POP</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="seimeisen.jpg"></div>
+					<div class="text">
+						1年生の時から3人でバンドを組み、今年で3回目、最後の増穂祭となりました。<br>
+						毎年、私たち生命線のライブに多くの人に聴きに来ていただいて本当にありがとうございます。<br>
+						今回は、1年生の時に初めて弾いた曲、「風のたより(tayori)」と、映画の主題歌として有名になった「未明(Yu Orie)」、最後には
+						私たちで創ったオリジナル曲、「泥桜」を演奏予定です。<br>
+						1年間練習を重ねてきた集大成です！ぜひ聴きに来てください！お願いします！！
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="times-name">第37回<span class="name">増穂祭</span></div>
+		<div class="copyright">(c) Hashida high school. All right reserved.</div>
+	</footer>
+
+	<script src="../header.js"></script>
+	<script src="attraction-band.js"></script>
+</body>
+</html>

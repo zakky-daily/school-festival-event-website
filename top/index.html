@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <!-- scp -r ScF_20240710 k2411572@sol.cc.uec.ac.jp:/home0/y2024/k2411572/public_html/14th -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.8">
+
+    <title>第14回</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body style="text-align: center;">
+
+    <h1>コンピュータリテラシー 第14回</h1>
+
+    <h2>メンバー</h2>
+    2411516 池﨑 文哉<br>
+    2411536 及川 蒼翔<br>
+    2411572 北﨑 碧恵<br>
+    2411744 望月 迪博
+
+    <h2>テーマ</h2>
+    『架空の文化祭の特設サイト』
+
+    <h2>制作物</h2>
+    <a href="javascript:goto()">https://www.edu.cc.uec.ac.jp/~k2411572/14th/zouhosai_2024/</a> 以下です．<br><br><br>
+
+    <img src="door.png" onclick="goto()" style="cursor: pointer;">
+
+
+    <script>
+        $(window).on("beforeunload", function(e) {
+            
+            window.location.reload();
+        });
+
+        function goto() {
+
+            $('img').attr('src', 'door-open.png');
+            setTimeout(() => {
+
+                window.location.href = '../';
+            }, 300);
+        }
+    </script>
+</body>
+
+</html>

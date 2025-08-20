@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+	<!-- scp -r ScF_20240710 k2411572@sol.cc.uec.ac.jp:/home0/y2024/k2411572/public_html/14th -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=0.8">
+
+    <title>増穂祭 2024</title>
+    <link rel="icon" href="../logo.png">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	<header>
+		<div class="environment pc">
+			<a href="../">トップ</a>
+			<a href="../map/">学内マップ</a>
+			<a href="../class/?sort=group-up&filter=all">クラス企画</a>
+			<a href="../band/?sort=group-up&filter=all">バンド</a>
+			<a href="../club/?sort=group-up&filter=all">部活</a>
+			<a href="../shop/?sort=group-up&filter=all">出店</a>
+			<a href="../timetable/">タイムテーブル</a>
+			<div class="expand other">
+				その他
+				<div class="expand-list">
+					<a href="../theme/">テーマに寄せて</a>
+					<a href="../greeting/">校長・文実委員長挨拶</a>
+					<a href="../access/">アクセス</a>
+					<a href="../donate/">寄付のお願い</a>
+				</div>
+			</div>
+		</div>
+		<div class="environment phone">
+			<a href="../">トップ</a>
+			<a href="../map/">学内マップ</a>
+			<div class="expand attraction">
+				企画
+				<div class="expand-list">
+					<a href="../class/?sort=group-up&filter=all">クラス企画</a>
+					<a href="../band/?sort=group-up&filter=all">バンド</a>
+					<a href="../club/?sort=group-up&filter=all">部活</a>
+					<a href="../shop/?sort=group-up&filter=all">出店</a>
+				</div>
+			</div>
+			<a href="../timetable/">タイムテーブル</a>
+			<div class="expand other other-right">
+				その他
+				<div class="expand-list">
+					<a href="../theme/">テーマに寄せて</a>
+					<a href="../greeting/">校長・文実委員長挨拶</a>
+					<a href="../access/">アクセス</a>
+					<a href="../donate/">寄付のお願い</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="top-image">
+		<img src="class.jpg">
+		<div class="title">クラス企画</div>
+	</div>
+
+	<div class="width">
+
+		<div class="comment">
+			みんなで作り上げたクラス企画。<br>
+			時にはもめたり、喧嘩したり。<br>
+			それでもお客さんを楽しませるために。<br>
+			<br><br>
+			クラス展示は各教室で行っています。
+		</div>
+			
+		<div class="page-label">企画一覧</div>
+
+		<div class="finder">
+			<div class="element sort">
+				<div class="label">並び順</div>
+				<div class="dropbox">
+					<div class="mask">
+						<div class="element show">団体名(昇順)</div>
+						<a href="./?sort=group-up" class="element candidate">団体名(昇順)</a>
+						<a href="./?sort=group-down" class="element candidate">団体名(降順)</a>
+						<a href="./?sort=name-up" class="element candidate">企画名(昇順)</a>
+						<a href="./?sort=name-down" class="element candidate">企画名(降順)</a>
+					</div>
+				</div>
+			</div>
+			<div class="element filter">
+				<div class="label">ジャンル</div>
+				<div class="dropbox">
+					<div class="mask">
+						<div class="element show">全ての企画</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="list">
+
+			<div class="content">
+				<div class="header">
+					<div class="group">1年A組</div>
+					<div class="name">俺の名前はジュリエット</div>
+					<div class="category"># 劇</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="1a.png"></div>
+					<div class="text">
+						もしもロミオとジュリエットの性別が反対だったら
+    ...　　1-Aの送るロミオとジュリエットのifストーリーをぜひともお楽しみください！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">1年B組</div>
+					<div class="name">恐怖迷宮</div>
+					<div class="category"># 体験型アトラクション</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="1b.png"></div>
+					<div class="text">
+						医療ミスによって閉鎖した廃病院。幽霊が出ると噂のその廃墟にあなたは探検に行くことにしたのでした...。背筋の凍る体験をしてみてください！
+					</div>
+				</div>
+			</div>	
+
+			<div class="content">
+				<div class="header">
+					<div class="group">1年C組</div>
+					<div class="name">裏カジノ　LAS VEGAS</div>
+					<div class="category"># 体験型アトラクション</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="1c.png"></div>
+					<div class="text">
+						チップをかけて1-Cのディーラーと勝負！ブラックジャック、ポーカーなどのトランプゲームを制覇せよ！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">1年D組</div>
+					<div class="name">密室からの脱出</div>
+					<div class="category"># 体験型アトラクション</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="1d.png"></div>
+					<div class="text">
+						あなたはこの謎を解くことができるか？部屋の中に隠された謎を解き明かし、密室から脱出しよう！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">2年A組</div>
+					<div class="name">江戸喫茶</div>
+					<div class="category"># お食事処</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="2a.png"></div>
+					<div class="text">
+						文化祭巡りに疲れたら私たちに会いに来てください！江戸時代にタイムスリップしたかのような体験があなたを待っています！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">2年B組</div>
+					<div class="name">クイズ大会　ビリオネア</div>
+					<div class="category"># 体験型アトラクション</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="2b.png"></div>
+					<div class="text">
+						参加型クイズ大会で勝負！クイズ大会はジャンルごとに分けられており、その数なんと２０種類。優勝者には豪華プレゼントを授与！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">2年C組</div>
+					<div class="name">増穂縁日</div>
+					<div class="category"># 体験型アトラクション</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="2c.png"></div>
+					<div class="text">
+						射的、わなげ、ヨーヨー釣りまでなんでもござれ！祭りには欠かせない出し物の数々を楽しんでください！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">2年D組</div>
+					<div class="name">アソパソマソ</div>
+					<div class="category"># 劇</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="2d.png"></div>
+					<div class="text">
+						町中のみんなから好かれているみんなのヒーローのアソパソマソ。
+    そんな彼の苦悩を描いた爆笑コメディー！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">3年A組有志</div>
+					<div class="name">人探し</div>
+					<div class="category"># 体験型アトラクション</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="3a.png"></div>
+					<div class="text">
+						学校を歩き回る指名手配犯を見つけてスタンプを集めよう！ゲットしたスタンプの数に応じて豪華賞品をゲット！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">3年B組有志</div>
+					<div class="name">ラブリーメイド喫茶</div>
+					<div class="category"># お食事処</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="3b.png"></div>
+					<div class="text">
+						3-B生徒全員参加！かわいいメイドさん♂の姿に癒されていってください！飲食だけでなくメイドさんにおいしくなる魔法をかけてもらったり、メイドさんと遊んだりできます！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">3年C組有志</div>
+					<div class="name">不思議の国のアリストテレス</div>
+					<div class="category"># 劇</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="3c.png"></div>
+					<div class="text">
+						もしもアリストテレスが不思議の国に迷い込んだらどうなってしまうのか？！3-C生徒の送る最高のドタバタコメディー！
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="group">3年D組有志</div>
+					<div class="name">ウマ息子</div>
+					<div class="category"># 体験型アトラクション</div>
+				</div>
+				<div class="introduce">
+					<div class="image"><img src="3d.png"></div>
+					<div class="text">
+						出場する人のステータスから、だれが一番早くゴールするかを予想しよう！賭け方は単勝、３連単
+    など様々！ドリームマッチここに開催！
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="times-name">第37回<span class="name">増穂祭</span></div>
+		<div class="copyright">(c) Hashida high school. All right reserved.</div>
+	</footer>
+
+	<script src="../attraction.js"></script>
+	<script src="../header.js"></script>
+</body>
+</html>

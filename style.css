@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+}
+
+header {
+
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    background: #ffffffdf;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 2;
+}
+
+.header-black {
+
+    background: #000000cf;
+    color: white;
+}
+
+header .environment {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 700px) {
+
+    header .phone {
+  
+        display: none;
+    }
+}
+
+@media screen and (max-width: 699px) {
+
+    header .pc {
+  
+        display: none;
+    }
+}
+
+header .environment a {
+
+    text-decoration: none;
+    color: black;
+}
+
+header .environment a:hover {
+
+    text-decoration: underline;
+}
+
+.header-black .environment a {
+
+    color: white;
+}
+
+header .environment .expand {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    vertical-align: middle;
+}
+
+header .environment .other-right {
+
+    position: static;
+}
+
+header .environment .expand::after {
+
+    content: "";
+    display: inline-block;
+    margin-left: 0px;
+    background: url("open.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    vertical-align: text-top;
+    transition-duration: 0.2s;
+}
+
+.header-black .environment .expand::after {
+
+    background: url("open-white.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header .environment .expand:has(> .expand-list-open)::after {
+
+    transform: scaleY(-1);
+}
+
+header .environment .expand .expand-list {
+
+    position: absolute;
+    display: block;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%) scaleY(0);
+    transform-origin: center top;
+    background: white;
+    box-shadow: 0 0 8px #0000003f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: black;
+    transition-duration: 0.2s;
+    user-select: none;
+}
+
+header .environment .expand .expand-list-open {
+
+    transform: translateX(-50%) scaleY(1);
+}
+
+header .environment .expand .expand-list a {
+
+    display: block;
+    padding: 24px;
+    text-align: center;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+}
+
+header .environment .expand .expand-list a:hover {
+
+    text-decoration: underline;
+}
+
+header .environment .other-right .expand-list {
+
+    left: auto;
+    right: 8px;
+    transform: scaleY(0);
+}
+
+header .environment .other-right .expand-list-open {
+
+    transform: scaleY(1);
+}
+
+body {
+
+    width: 100%;
+}
+
+.body-black {
+
+    background: black;
+}
+
+.top-image {
+
+    position: relative;
+    margin-top: 60px;
+    height: 320px;
+    overflow: hidden;
+}
+
+.top-image img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-image .title {
+
+    position: absolute;
+    bottom: 16px;
+    right: max(16px, calc(50vw - 540px));
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 0 8px #0000003f;
+    text-align: right;
+}
+
+.width {
+
+    margin: 0 max(0px, calc(50vw - 540px));
+}
+
+.comment {
+
+    padding: 72px 16px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+}
+
+.comment-black {
+
+    color: white;
+}
+
+.page-label {
+
+    margin: 0 12px;
+    font-size: 40px;
+}
+
+.page-label-black {
+
+    color: white
+}
+
+.finder {
+
+    display: flex;
+    padding: 18px 28px 12px 28px;
+}
+
+.finder-black {
+
+    color: white
+}
+
+.finder .element {
+
+    position: relative;
+}
+
+.finder .sort {
+
+    margin-right: 18px;
+    width: calc(50% - 9px);
+}
+
+.finder .filter {
+
+    width: calc(50% - 9px);
+}
+
+.finder .label {
+
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.finder .dropbox {
+
+    position: relative;
+    height: 69px;
+    z-index: 1;
+}
+
+.finder .dropbox .mask {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 8px #0000003f;
+    cursor: default;
+    transition-duration: 0.2s;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.finder .sort .dropbox .mask-open {
+
+    height: 500%;
+}
+
+.finder .dropbox .mask .element {
+
+    display: block;
+    padding: 20px 0;
+    background: white;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.2s;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.finder .dropbox .mask .show{
+
+    font-weight: 500;
+}
+
+.finder .dropbox .mask-open .show {
+
+    background: #ff5f00;
+    color: white;
+}
+
+.finder .dropbox .mask .show::after {
+
+    content: "";
+    display: block;
+    position: absolute;
+    width: min(32px, 6vw);
+    aspect-ratio: 1;
+    right: 8px;
+    top: calc(50% - min(16px, 3vw));
+    background: url("open.png");
+    background-size: cover;
+    transition-duration: 0.2s;
+}
+
+.finder .dropbox .mask-open .show::after {
+
+    transform: scaleY(-1);
+}
+
+.finder .dropbox .mask .candidate:hover {
+
+    background: #dfdfdf;
+}
+
+.list .content {
+
+    margin: 24px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 0 8px #0000003f;
+    overflow: hidden;
+}
+
+.list .content .header {
+
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background: #ff5f00;
+    color: white;
+}
+
+.list .content .header .group {
+
+    margin: 0 12px 0 8px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.list .content .header .name {
+
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.list .content .header .category {
+
+    margin: 0 8px 0 auto;
+    padding: 4px;
+    padding-left: calc(1em + 2px);
+    clip-path: polygon(1em 0, 100% 0, 100% 100%, 1em 100%, 0 50%);
+    background: white;
+    box-shadow: 4px 4px #000000;
+    color: black;
+    font-size: 18px;
+}
+
+.list .content .introduce {
+
+    display: flex;
+    padding: 8px;
+}
+
+.list .content .introduce .image {
+
+    margin-right: 8px;
+    height: min(32vw, 220px);
+    aspect-ratio: 1;
+}
+
+.list .content .introduce .image img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 6px;
+}
+
+
+.mapbtn {
+    display: flex;
+    padding: 4px;
+    background-color: white;
+}
+
+.mapbtn .content:hover {
+    background-color: #ff5f00;
+    color: white;
+}
+
+.mapbtn .content {
+    
+    flex-grow: 1;
+    margin: 4px;
+    padding: 20px 0;
+    background-color: white;
+    box-shadow: 0 0 8px #0000003f;
+    font-size: 28px;
+    text-align: center;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+footer {
+
+    position: relative;
+    padding: 32px;
+    box-sizing: border-box;
+    background: #5f5f5f;
+    color: white;
+    text-align: center;
+}
+
+footer .times-name {
+
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+footer .times-name .name {
+
+    margin-left: 16px;
+    font-family: "Noto Serif JP", serif;
+    font-size: 60px;
+}
+
+footer .copyright {
+
+    font-size: 18px;
+}

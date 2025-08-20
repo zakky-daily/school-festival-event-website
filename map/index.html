@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+	<!-- scp -r ScF_20240710 k2411572@sol.cc.uec.ac.jp:/home0/y2024/k2411572/public_html/14th -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=0.8">
+
+    <title>増穂祭 2024</title>
+    <link rel="icon" href="../logo.png">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../style.css">
+	<style>
+		.docs-parent .docs div img {
+			width: min(90%, 440px);
+		}
+		.docs-parent .docs div {
+			margin: 32px;
+		}
+		.docs-parent .docs .text {
+			font-size: larger;
+			border: solid 2px black;
+			padding: 12px;
+			text-align: center;
+		}
+		.docs-parent .docs-hidden {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="environment pc">
+			<a href="../">トップ</a>
+			<a href="../map/">学内マップ</a>
+			<a href="../class/?sort=group-up&filter=all">クラス企画</a>
+			<a href="../band/?sort=group-up&filter=all">バンド</a>
+			<a href="../club/?sort=group-up&filter=all">部活</a>
+			<a href="../shop/?sort=group-up&filter=all">出店</a>
+			<a href="../timetable/">タイムテーブル</a>
+			<div class="expand other">
+				その他
+				<div class="expand-list">
+					<a href="../theme/">テーマに寄せて</a>
+					<a href="../greeting/">校長・文実委員長挨拶</a>
+					<a href="../access/">アクセス</a>
+					<a href="../donate/">寄付のお願い</a>
+				</div>
+			</div>
+		</div>
+		<div class="environment phone">
+			<a href="../">トップ</a>
+			<a href="../map/">学内マップ</a>
+			<div class="expand attraction">
+				企画
+				<div class="expand-list">
+					<a href="../class/?sort=group-up&filter=all">クラス企画</a>
+					<a href="../band/?sort=group-up&filter=all">バンド</a>
+					<a href="../club/?sort=group-up&filter=all">部活</a>
+					<a href="../shop/?sort=group-up&filter=all">出店</a>
+				</div>
+			</div>
+			<a href="../timetable/">タイムテーブル</a>
+			<div class="expand other other-right">
+				その他
+				<div class="expand-list">
+					<a href="../theme/">テーマに寄せて</a>
+					<a href="../greeting/">校長・文実委員長挨拶</a>
+					<a href="../access/">アクセス</a>
+					<a href="../donate/">寄付のお願い</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="top-image">
+		<img src="top-image.webp">
+		<div class="title">学内マップ</div>
+	</div>
+
+	<div class="width">
+		<div style="padding: 40px 18px; text-align: center">
+			こちらは橋田高校の学内マップ及びフロアマップのページです。<br>
+			以下のボタンから切り替えられます。
+		</div>
+
+		<div class="mapbtn">
+			<div class="content gakunai" onclick="pagechange(0);">学内</div>
+			<div class="content F1" onclick="pagechange(1);">F1</div>
+			<div class="content F2" onclick="pagechange(2);">F2</div>
+			<div class="content F3" onclick="pagechange(3);">F3</div>
+			<div class="content F4" onclick="pagechange(4);">F4</div>
+		</div>
+
+		<div class="docs-parent">
+			<div class="docs docs-gakunai">
+				<div style="text-align: center;">
+					<img src="gakunaimap.jpg" alt="gakunai"><br>
+				</div>
+				<div class="text">
+					①A棟<br>
+					②学生棟<br>
+					③体育館<br>
+					④図書室<br>
+					⑤グラウンド<br>
+					⑥駐車場<br>
+					⑦部室棟<br>
+				</div>
+			</div>
+			<div class="docs docs-F1 docs-hidden">
+				<div style="text-align: center;">
+					<img src="F1.jpg" alt="F1"><br><br>
+				</div>
+
+				<div class="text">
+					①体育館<br>
+					②社会科室<br>
+					③生物室<br>
+					④視聴覚室<br>
+					⑤控え室<br>
+					⑥購買<br>
+				</div>
+			</div>
+			<div class="docs docs-F2 docs-hidden">
+				<div style="text-align: center;">
+					<img src="F2.jpg" alt="F2"><br>
+				</div>
+				<div class="text">
+					⑦資料室<br>
+					⑧三年A組<br>
+					⑨三年B組<br>
+					⑩三年C組<br>
+					⑪三年D組<br>
+				</div>
+			</div>
+			<div class="docs docs-F3 docs-hidden">
+				<div style="text-align: center;">
+					<img src="F3.jpg" alt="F3"><br>
+				</div>
+				<div class="text">
+					⑫視聴覚室<br>
+					⑬二年A組<br>
+					⑭二年B組<br>
+					⑮二年C組<br>
+					⑯二年D組<br></div>
+			</div>
+			<div class="docs docs-F4 docs-hidden">
+				<div style="text-align: center;">
+					<img src="F4.jpg" alt="F4"><br>
+				</div>
+				<div class="text">
+					⑰第一講義室<br>
+					⑱第二講義室<br>
+					⑲第三講義室<br>
+					⑳階段横<br>
+					㉑一年A組<br>
+					㉒一年B組<br>
+					㉓一年C組<br>
+					㉔一年D組<br>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+
+		<div class="times-name">第37回<span class="name">増穂祭</span></div>
+		<div class="copyright">(c) Hashida high school. All right reserved.</div>
+
+	</footer>
+	<script src="main.js"></script>
+	<script src="../header.js"></script>
+</body>
+
+</html>

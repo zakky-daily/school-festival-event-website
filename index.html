@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <!-- scp -r zouhosai_2024 k2411572@sol.cc.uec.ac.jp:/home0/y2024/k2411572/public_html/14th -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=0.8">
+
+  <title>増穂祭 2024</title>
+  <link rel="icon" href="logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style-home.css">
+</head>
+
+<body>
+  <div class="white"></div>
+  <header class="header-transparent">
+		<div class="environment pc">
+			<a href="./">トップ</a>
+			<a href="map/">学内マップ</a>
+			<a href="class/?sort=group-up&filter=all">クラス企画</a>
+			<a href="band/?sort=group-up&filter=all">バンド</a>
+			<a href="club/?sort=group-up&filter=all">部活</a>
+			<a href="shop/?sort=group-up&filter=all">出店</a>
+			<a href="timetable/">タイムテーブル</a>
+			<div class="expand other">
+				その他
+				<div class="expand-list">
+					<a href="theme/">テーマに寄せて</a>
+					<a href="greeting/">校長・文実委員長挨拶</a>
+					<a href="access/">アクセス</a>
+					<a href="donate/">寄付のお願い</a>
+				</div>
+			</div>
+		</div>
+		<div class="environment phone">
+			<a href="">トップ</a>
+			<a href="map/">学内マップ</a>
+			<div class="expand attraction">
+				企画
+				<div class="expand-list">
+					<a href="class/?sort=group-up&filter=all">クラス企画</a>
+					<a href="band/?sort=group-up&filter=all">バンド</a>
+					<a href="club/?sort=group-up&filter=all">部活</a>
+					<a href="shop/?sort=group-up&filter=all">出店</a>
+				</div>
+			</div>
+			<a href="timetable/">タイムテーブル</a>
+			<div class="expand other other-right">
+				その他
+				<div class="expand-list">
+					<a href="theme/">テーマに寄せて</a>
+					<a href="greeting/">校長・文実委員長挨拶</a>
+					<a href="access/">アクセス</a>
+					<a href="donate/">寄付のお願い</a>
+				</div>
+			</div>
+		</div>
+  </header>
+
+  <div class="background"></div>
+  <div id="particles-js"></div>
+
+  <div class="fes">
+    <div class="times">第37回</div>
+    <div class="name">増穂祭</div>
+  </div>
+
+  <div class="fes-blank">
+    <div class="theme">『百花繚乱』</div>
+  </div>
+
+  <div class="top">
+    <div class="date-place">
+      2024年9月<br>
+      <span class="date">28日(土)・29日(日)</span><br>
+      <span class="school">県立<span class="school-name">橋田高等学校</span></span>
+    </div>
+    <div class="pickup">
+      <div class="label">Pick up!</div>
+      <div class="list">
+        <div class="content">
+          <div class="title">【重要】落とし物のご案内<span class="date">・本日 11:43</span></div>
+          <div class="body">
+            11時30分ごろ，携帯電話の落とし物が，本学学生によって届けられました。<br>
+            機種はiPhoneで，虎のキーホルダーがついています。<br>
+            お心当たりのある方は，1階事務室までお越しください。
+          </div>
+        </div>
+        <div class="content">
+          <div class="title">11時よりバンド「foster」のライブが始まります!!<span class="date">・本日 10:50</span></div>
+          <div class="body">
+            会場は1階エントランスです。<br>
+            ぜひお越しください。
+          </div>
+        </div>
+        <div class="content">
+          <div class="title">11時より「合唱部」のパフォーマンスが始まります!!<span class="date">・本日 10:50</span></div>
+          <div class="body">
+            会場は1階社会科室です。<br>
+            ぜひお越しください。
+          </div>
+        </div>
+        <div class="mr"></div>
+      </div>
+      <div class="dot">
+        <div class="object object-now" onclick="scrollJump(0)"></div>
+        <div class="object" onclick="scrollJump(1)"></div>
+        <div class="object" onclick="scrollJump(2)"></div>
+      </div>
+    </div>
+
+    <div class="scroll">
+      <div class="line"></div>
+      <div class="dot"></div>
+      <div class="text">scroll</div>
+    </div>
+
+    <div class="introduce">
+      <h1>ようこそ、橋田高校へ！</h1>
+      <p>私たちが作り上げた文化祭を、是非お楽しみください。</p>
+      <div class="link">
+        <a href="theme/" class="content">
+          <div class="image"><img src="theme.png" alt="theme"></div>
+          <div class="message">テーマに寄せて</div>
+        </a>
+        <a href="greeting/" class="content">
+          <div class="image"><img src="gakutyo.jpg" alt="theme"></div>
+          <div class="message">学長・文化祭実行委員長挨拶</div>
+        </a>
+        <a href="map/" class="content">
+          <div class="image"><img src="map.jpg" alt="theme"></div>
+          <div class="message">学内マップ</div>
+        </a>
+      </div>
+      <h1>どこに行こう？</h1>
+      <p>様々な企画があなたを待っています。</p>
+      <div class="link">
+        <a href="class/?sort=group-up&filter=all" class="content">
+          <div class="image"><img src="class.jpg" alt="theme"></div>
+          <div class="message">クラス企画</div>
+        </a>
+        <a href="band/?sort=group-up&filter=all" class="content">
+          <div class="image"><img src="band.jpg" alt="theme"></div>
+          <div class="message">バンド・ステージ</div>
+        </a>
+        <a href="club/?sort=group-up&filter=all" class="content">
+          <div class="image"><img src="club.jpg" alt="theme"></div>
+          <div class="message">部活</div>
+        </a>
+        <a href="shop/?sort=group-up&filter=all" class="content">
+          <div class="image"><img src="shop.webp" alt="theme"></div>
+          <div class="message">出店</div>
+        </a>
+      </div>
+      <h1>ステージに乗り遅れるな！</h1>
+      <p>開始時刻は事前にチェックしておきましょう！</p>
+      <div class="link">
+        <a href="timetable/" class="content">
+          <div class="image"><img src="time.png" alt="theme"></div>
+          <div class="message">タイムスケジュール</div>
+        </a>
+        <div class="content" onclick="announce()">
+          <div class="image"><img src="announce.png" alt="theme"></div>
+          <div class="message">アナウンス</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="times-name">第37回<span class="name">増穂祭</span></div>
+    <div class="copyright">(c) Hashida high school. All right reserved.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="particles.js"></script>
+  <script src="header.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
